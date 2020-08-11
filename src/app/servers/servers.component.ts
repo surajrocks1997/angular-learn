@@ -24,13 +24,14 @@ export class ServersComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  // tslint:disable-next-line: typedef
   onCreateServer() {
     this.serverCreationStatus = 'server was created! Name is ' + this.serverName;
     this.serverCreated = true;
   }
 
-  onUpdateServerName(event: Event) {
-    console.log(event);
-    this.serverName = (<HTMLInputElement>event.target).value;
-  }
+  // onUpdateServerName(event: Event) {
+  //   console.log(event);
+  //   this.serverName = (<HTMLInputElement>event.target).value;
+  // }
 }
